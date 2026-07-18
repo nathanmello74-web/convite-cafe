@@ -1,0 +1,54 @@
+/*reseta as margens padrao do navegador*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color:#121212;
+    color:#00ff00;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:100vh;
+    overflow:hidden; /*impede barras de rolagem se o botão fugir */
+}
+/*estilo de caixinha do convite */
+.container{
+    padding: 30px;
+    border: 2px solid #00ff00;
+    border: radius 10px;
+    background-color:#1a1a1a;
+    text-align: center;
+    max-width: 450px;
+    width:100%;
+}
+/*almenta os espaços em baixo para os botoes nao sumirem*/
+p{
+    color:#ffff;
+    margin: 20px 0;
+}
+
+/*estilo padrao para os 2 botoes */
+button{
+    padding: 12px 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    font-size:1rem;
+}
+
+#btn-sim{
+    background-color: #00ff00;
+    color:#121212;
+}
+/*O SEGREDO DO POSICIONAMENTO */
+#btn-nao{
+    background-color:#ff3333;
+    color:white;
+    position:absolute;/*deixa com javascript*/
+}
